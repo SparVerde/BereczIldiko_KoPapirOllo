@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageHp1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/heart2" />
+
+    <ImageView
+        android:id="@+id/imageHp2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/heart2" />
+
+    <ImageView
+        android:id="@+id/imageHp3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/heart2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gép"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/linearLayout1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Játékos"
+            android:textSize="30dp"/>
+
+        <ImageView
+            android:id="@+id/imageHp4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2" />
+        <ImageView
+            android:id="@+id/imageHp5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2" />
+        <ImageView
+            android:id="@+id/imageHp6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text1"
+        android:text="Döntetlenek száma: 0"
+        android:textSize="30dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageHp7"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/Text1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text2"
+        android:text="A gép választása"
+        android:textSize="30dp"
+        android:layout_below="@id/imageHp7"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageHp8"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/Text2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text3"
+        android:text="A te választásod"
+        android:textSize="30dp"
+        android:layout_below="@id/imageHp8"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Text3">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rock"
+            app:backgroundTint="@color/black"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/paper"
+            app:backgroundTint="@color/black"
+            />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/scissors"
+            app:backgroundTint="@color/black"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
